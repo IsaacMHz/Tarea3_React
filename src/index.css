@@ -38,7 +38,8 @@ body {
   transform: rotate(135deg);
 }
 
-.GameCounter{
+.GameCounter {
+  display: block;
   font-size: 24px;
   text-align: center;
   margin: 0;
@@ -46,18 +47,26 @@ body {
   font-weight: normal;
 }
 
+h2{
+  text-align: center;
+}
+
 .GameCounter span{
   font-weight: bold;
 }
 
 .GameItem{
-  background-color: #fafafa;
+  background-color: #ff3131ce;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 24px;
   box-shadow: 0 5px 50px rgba(32, 35, 41, 0.15);
+}
+
+.GameItem--active{
+  background-color: rgb(84, 151, 84);
 }
 
 .Item-p{
@@ -88,7 +97,7 @@ body {
 }
 
 .Icon-check--active{
-  color: green;
+  color: rgb(84, 151, 84);
 }
 
 .Icon-delete{
@@ -113,11 +122,11 @@ body {
   border: 2px solid black;
   margin: 0 24px;
   height: 64px;
-  width: calc(100% -62px);
+  width: calc(100% - 62px);
   font-size: 24px;
   text-align: center;
   font-size: 'Monserrat';
-  font-weight: 400;
+  font-weight: 400px;
   color: #1f1f1f;
   box-shadow: 0 5px 50px rgba(32, 35, 41, 0.25);
 }
@@ -125,9 +134,9 @@ body {
 .GameSearch:hover{
   color: #a5a5a5;
   font-family: 'Monserrat';
-  font-weight: 400;
+  font-weight: 400px;
 }
 
 .GameSearch:focus{
-  outline-color: #61dafa;
+  outline-color: #3cc6ec;
 }

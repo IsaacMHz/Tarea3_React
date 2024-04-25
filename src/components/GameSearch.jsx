@@ -1,8 +1,18 @@
 import React from 'react'
 
-export const GameSearch = () => {
+export const GameSearch = (props) => {
+
+  
+
   return (
-    <input className='GameSearch' placeholder='Mario Bros xd' />
+    <input className='GameSearch' 
+    placeholder='Mario Bros xd'
+    value={props.searchValue}
+    onChange={ (event) => {
+      props.setSearchValue(event.target.value)
+      console.log(event.target.value)
+    } 
+    } />
   )
 }
 
