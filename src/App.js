@@ -13,11 +13,6 @@ const defaultGames = [
   { text: 'Gears of war', completed: true },
 ]
 
-const check = [ 
-  {text: 'v', completed:false},
-  {text: '', completed:true},
-]
-
 function App() {
 
   const localStorageGames = localStorage.getItem('Games');

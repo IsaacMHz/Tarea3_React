@@ -1,9 +1,6 @@
 import React from 'react'
 
 export const GameSearch = (props) => {
-
-  
-
   return (
     <input className='GameSearch' 
     placeholder='Mario Bros xd'
